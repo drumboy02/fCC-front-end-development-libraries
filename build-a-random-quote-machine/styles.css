@@ -1,0 +1,89 @@
+:root {
+  font-size: 20px;
+  font-family: Times New Roman;
+}
+
+h1 {
+  color: #eee;
+  font-size: 2.25rem;
+  font-family: cursive;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+#quote-box {
+  background: #777;
+  padding: 0.25rem 0.75rem;
+  margin-bottom: 15vh;
+  border: 4px outset #eee;
+  border-radius: 2px;
+  max-width: 460px;
+  display: flex;
+  flex-direction: column;
+}
+
+#text {
+  padding: 0.5em 0;
+  margin: 0.5em;
+  font-size: 1.35rem;
+}
+
+#text:before,
+#text:after {
+  font-size: 1.75rem;
+  content: '"'
+}
+
+#author {
+  align-self: end;
+  margin: 0.25em 0 1em;
+  color: #ccc;
+}
+
+#user-inputs {
+  margin: 0.5em 0 0.25em;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+#new-quote {
+  font-size: 0.75rem;
+  font-family: monospace;
+  letter-spacing: 0.2em;
+  background-color: #333;
+  border-radius: 2px;
+  color: #fff;
+  padding: 0.75em 2.75em;
+}
+
+#new-quote:hover {
+  cursor: pointer;  
+}
+
+#new-quote:active {
+  background-color: #eee;
+  color: #000;
+  border: 2px ridge #0f0;
+}
+
+.icon {
+  width: 2.25em;
+  height: 2.25em;
+  vertical-align: -1.25em;
+}
+
+.icon:hover {
+  fill: #eee;
+}
