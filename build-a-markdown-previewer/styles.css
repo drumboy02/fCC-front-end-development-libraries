@@ -1,0 +1,79 @@
+:root {
+  font-size: 14px;
+  font-family: monospace;
+  --color-1: hsl(200, 20%, 62%);
+  --color-2: hsl(200, 0%, 97%);
+  --color-3: #223;
+  --text-shadow: 1px 2px 1px var(--color-3);
+  --rounded: 2px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--color-1);
+  color: #223;
+}
+
+h1 {
+  font-size: 2.5rem;
+  letter-spacing: 4px;
+  color: var(--color-2);
+  text-shadow: var(--text-shadow);
+  text-align: center;
+  margin: 1rem 0.5rem;
+}
+
+.app-container {
+  margin: 1.5rem 0.5rem;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 0.5rem;
+}
+
+#editor {
+  resize: vertical;
+  background-color: var(--color-2);
+  padding: 0.2rem;
+  border: 2px solid var(--color-3);
+  border-radius: var(--rounded);
+  width: 400px;
+}
+
+#editor:focus {
+  outline: 2px solid gold;
+}
+
+#preview {
+  background-color: var(--color-3);
+  color: var(--color-2);
+  padding: 0 0.6rem;
+  border: 1px solid var(--color-2);
+  border-radius: var(--rounded);
+  word-wrap: break-word;
+  width: 600px;
+  overflow: hidden;
+}
+
+#preview img {
+  width: 100%;
+  background-color: var(--color-2);
+  border: 2px solid gold;
+  border-radius: var(--rounded);
+  padding: 0;
+  margin: 0;
+}
+
+#preview a {
+  color: gold;
+}
+
+#preview code {
+  background-color: #000;
+  color: orange;
+}
+
+pre {
+  background-color: #000;
+}
