@@ -1,0 +1,87 @@
+:root {
+  font-size: 16px;
+  --alt-font: monospace;
+  --orange: hsl(25, 100%, 50%);
+  --white: hsl(25, 50%, 94%);
+  --gray: hsl(75, 15%, 62%);
+  --gray-2: hsl(25, 5%, 55%);
+  --dark-gray: hsl(75, 52%, 11%);
+}
+
+body {
+  color: var(--dark-gray);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--orange);
+}
+
+.heading {
+  font-family: var(--alt-font);
+  text-align: center;
+  background-color: var(--gray);
+  padding: 0.5rem;
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+}
+
+.app-container {
+  display: flex;
+  justify-content: center;
+}
+
+#drum-machine {
+  background-color: var(--white);
+  border: 2px solid #000;
+  border-radius: 4px;
+  margin-top: 2.5rem;
+  width: 400px;
+  height: 240px;
+  display: grid;
+  place-items: center;
+}
+
+.top {
+  display: flex;
+}
+
+.logo {
+  color: var(--orange);
+  justify-self: start;
+  margin-left: 0.5rem;
+}
+
+#display {
+  font-family: var(--alt-font);
+  background-color: var(--gray);
+  border: 2px inset;
+  height: 50px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.drum-pad {
+  background-color: var(--gray-2);
+  color: var(--white);
+  height: 42px;
+  margin: 1rem 0.25rem 0;
+}
+
+.drum-pad:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.drum-pad:active {
+  background-color: var(--orange);
+}
+
+.orange-strip {
+  background: var(--orange);
+  width: 90%;
+  height: 5px;
+  margin-bottom: 1rem;
+}
+
