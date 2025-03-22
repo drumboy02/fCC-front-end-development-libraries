@@ -1,0 +1,124 @@
+:root {
+  font-size: 16px;
+  --green: hsl(133, 55%, 22%);
+  --gap: 2px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--green);
+}
+
+h1 {
+  font-size: 3rem;
+  color: #fff;
+  text-shadow: 3px 3px 2px #000;
+  text-align: center;
+}
+
+button {
+  /*appearance: none;*/
+  font-size: 1.2rem;
+  font-family: Arial;
+  border: 2px solid;
+  background-color: #ffe;
+}
+
+button:hover {
+  border: 2px solid yellow;
+}
+
+button:active {
+  border: 2px solid blue;
+  color: yellow;
+}
+
+button.digit:active,
+button.decimal:active {
+  color: red;
+}
+
+.app-container {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+
+.calculator-container {
+  width: 420px;
+  height: 500px;
+  background-color: #000;
+  border: 10px solid;
+  border-radius: 4px;
+  display: grid;
+  grid-template-rows: 100px 380px;
+  /*gap: var(--gap)*/
+}
+
+#display {
+  font-size: 2.75rem;
+  background: black;
+  color: #fff;
+  word-break: break-all;
+  overflow: clip;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+}
+
+.button-container {
+  display: grid;
+  grid-template-rows: 1fr 4fr;
+  grid-template-columns: 3fr 1fr;
+  grid-template-areas:
+    "firstrow secondcol"
+    "secondrow secondcol";
+  /*gap: var(--gap);*/
+}
+
+.ac-div {
+  grid-area: firstrow;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  /*gap: var(--gap);*/
+}
+
+.digit-container {
+  grid-area: secondrow;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  /*gap: var(--gap);*/
+}
+
+.operators {
+  grid-area: secondcol;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 2fr;
+  /*gap: var(--gap);*/
+}
+
+#zero {
+  grid-column: span 2;
+}
+
+#clear {
+  background-color: red;
+}
+
+#equals {
+  background-color: green;
+}
+
+#divide,
+#multiply,
+#subtract,
+#add {
+  background-color: gray;
+}
