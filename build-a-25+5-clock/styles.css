@@ -1,0 +1,191 @@
+:root {
+  font-size: 20px;
+  font-family: Verdana;
+  color: #eee;
+  --background: #445;
+  --blue-gray: #bbc;
+  --container-width: 400px;
+  --num-space: 0.125rem;
+  --borders: 4px ridge var(--blue-gray);
+  --rounded: 6px;
+  --bold: 600;
+  --label-pad: 4px;
+  --bottom-mar: 0.5rem;
+  --length-width: 92px;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #222;
+}
+
+h1 {
+  text-align: center;
+  margin: 1rem;
+}
+
+button {
+  width: 100%;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.input-container {
+  background-color: var(--background);
+  border: var(--borders);
+  border-radius: var(--rounded);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+  width: var(--container-width);
+}
+
+.break {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+#break-label {
+  font-weight: var(--bold);
+  background-color: #111;
+  color: #eee;
+  width: 100%;
+  text-align: right;
+  padding: var(--label-pad);
+  margin-bottom: var(--bottom-mar);
+  border-right: var(--borders);
+  border-bottom: var(--borders);
+  border-bottom-right-radius: var(--rounded);
+}
+
+.break-buttons {
+  width: var(--length-width);
+}
+
+#break-increment {
+  
+}
+
+#break-decrement {
+
+}
+
+#break-length {
+  background-color: #eee;
+  border: 2.5px solid;
+  border-radius: var(--rounded);
+  color: #000;
+  font-size: 1.5rem;
+  font-weight: var(--bold);
+  letter-spacing: var(--num-space);
+  text-align: center;
+  width: var(--length-width);
+  margin: 0.25rem 0;
+}
+
+.session {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+#session-label {
+  font-weight: var(--bold);
+  background-color: #111;
+  color: #eee;
+  width: 100%;
+  text-align: left;
+  padding: var(--label-pad);
+  margin-bottom: var(--bottom-mar);
+  border-left: var(--borders);
+  border-bottom: var(--borders);
+  border-bottom-left-radius: var(--rounded);  
+}
+
+.session-buttons {
+  width: var(--length-width);
+}
+
+#session-increment {
+
+}
+
+#session-decrement {
+
+}
+
+#session-length {
+  background-color: #eee;
+  border: 2.5px solid;
+  border-radius: var(--rounded);
+  color: #000;
+  font-size: 1.5rem;
+  font-weight: var(--bold);
+  letter-spacing: var(--num-space);
+  text-align: center;
+  width: var(--length-width);
+  margin: 0.25rem 0;
+}
+
+.timer-container {
+  background-color: var(--background);
+  border: var(--borders);
+  border-radius: var(--rounded);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: var(--container-width);
+  gap: 0.25rem;
+}
+
+#timer-label {
+  background-color: #111;
+  color: #eee;
+  font-weight: var(--bold);
+  padding: var(--label-pad) 2rem;
+  margin-bottom: var(--bottom-mar);  
+  border-bottom: var(--borders);
+  border-left: var(--borders);
+  border-right: var(--borders);
+  border-bottom-left-radius: var(--rounded);
+  border-bottom-right-radius: var(--rounded);
+}
+
+#time-left {
+  background-color: #111;
+  color: #fff;
+  font-size: 3rem;
+  border: 6px ridge #a76;
+  border-radius: var(--rounded);
+  margin: 0 0 0.5rem;
+  letter-spacing: var(--num-space);
+  text-align: center;
+  width: 88%;
+}
+
+.controls {
+  background-color: var(--background);
+  border: var(--borders);
+  border-radius: var(--rounded);
+  width: var(--container-width);
+  display: flex;
+}
+
+.icon {
+  width: 15px;
+  position: relative;
+  top: 2px;
+}
